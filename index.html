@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>eBay API Tester</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- jQuery のCDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>eBay API Tester</h1>
+    
+    <div class="form-group">
+      <label for="apiSelect">APIの種類を選ぶ：</label>
+      <select id="apiSelect">
+        <option value="browse">Browse API</option>
+        <option value="analytics">Analytics API</option>
+        <option value="inventory">Inventory API</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="queryInput">検索クエリ（Browse APIの場合）：</label>
+      <input type="text" id="queryInput" placeholder="例: laptop">
+    </div>
+    
+    <div class="form-group">
+      <label for="limitInput">取得件数：</label>
+      <input type="number" id="limitInput" value="10">
+    </div>
+    
+    <div class="form-group">
+      <button id="executeBtn">実行</button>
+    </div>
+    
+    <div class="form-group">
+      <label for="resultBox">結果 (JSON)：</label>
+      <textarea id="resultBox" rows="15" readonly></textarea>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
