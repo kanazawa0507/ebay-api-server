@@ -18,7 +18,7 @@ $(document).ready(function() {
       
       // サーバー側のエンドポイント (/api/ebay) にAJAXリクエスト送信
       $.ajax({
-        url: 'http://localhost:3000/api/ebay',
+        url: 'https://ebay-api-server.vercel.app/api/ebay',
         method: 'GET',
         data: requestData,
         success: function(response) {
