@@ -1,18 +1,22 @@
 {
-  "name": "ebay",
+  "name": "ebay-api-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "description": "eBay API server",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node api/ebay.js",
+    "dev": "nodemon api/ebay.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.8.3",
     "cors": "^2.8.5",
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
   }
 }
